@@ -1,0 +1,188 @@
+.sing-up {
+    margin-top: 60px;
+    display: flex;
+}
+
+.sing-up__img {
+    width: 805px;
+    height: 781px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.singUp__left {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 125px;
+}
+
+.singUp-left__top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.singUp-left__senter {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.singUp-left__senter input {
+    width: 370px;
+    height: 32px;
+    gap: 8px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.singUp__titile {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    letter-spacing: 4%;
+}
+
+.singUp__text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.singUp-left__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.sing__btn {
+    width: 371px;
+    height: 56px;
+    gap: 10px;
+    background: #db4444;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-right: 122px;
+    padding-bottom: 16px;
+    padding-left: 122px;
+    border: none;
+}
+
+.sing__btn a {
+    display: flex;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    letter-spacing: 0%;
+}
+
+.sing__btnGoole {
+    width: 371px;
+    height: 56px;
+    gap: 10px;
+    background: transparent;
+    border-width: 1px;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-right: 86px;
+    padding-bottom: 16px;
+    padding-left: 86px;
+}
+
+.sing__btnGoole a {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.login__link {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.login__link a {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: black;
+    border-bottom: 1px solid gray;
+}
+
+.login__div {
+    display: flex;
+    gap: 16px;
+}
+
+
+.login__bottom {
+    display: flex;
+    gap: 87px;
+}
+
+.login__btn {
+    width: 153px;
+    height: 56px;
+    gap: 10px;
+    background: #DB4444;
+    border: none;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+
+}
+
+.login__btn a {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.login__btnn {
+    width: 153px;
+    height: 56px;
+    border: none;
+    background: transparent;
+}
+
+.login__btnn a {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #DB4444;
+}
+
+
+.icon-people {
+    font-size: 28px;
+}

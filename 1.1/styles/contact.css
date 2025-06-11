@@ -1,0 +1,156 @@
+.sing__about {
+    padding-top: 80px;
+    display: flex;
+    gap: 12px;
+}
+
+.sing__about a {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: gray;
+}
+
+.sing__about a:focus {
+    color: black;
+}
+
+.cont__div {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.Contact {
+    /* margin-left: 11%; */
+    padding: 40px 35px;
+    width: 340px;
+    height: 457px;
+    top: 323px;
+    left: 135px;
+    border-radius: 4px;
+    box-shadow: 0.1pc 1px 8px gray;
+}
+
+.Contact__top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 32px;
+}
+
+.div__tel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.div__tel p {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.div__text p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
+
+.div__text span,
+a {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.div__text {
+    display: flex;
+
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Contact__bottom .div__tel {
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.text__messenge {
+    width: 800px;
+    height: 457px;
+    border-radius: 4px;
+    box-shadow: 0.1pc 1px 8px gray;
+
+}
+
+.fotm__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 32px 41px;
+}
+
+.text__messenge form input {
+    width: 235px;
+    height: 50px;
+    background: #F5F5F5;
+    border: none;
+    outline: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding: 13px 16px;
+}
+
+.inp__mess {
+    margin-left: 5%;
+    width: 737px;
+    height: 207px;
+    background: #F5F5F5;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding-left: 20px;
+    padding-bottom: 20%;
+}
+
+.send__mess {
+    width: 215px;
+    height: 56px;
+    gap: 10px;
+    margin-top: 5%;
+    margin-left: 70%;
+    border: none;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+    background: #DB4444;
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}

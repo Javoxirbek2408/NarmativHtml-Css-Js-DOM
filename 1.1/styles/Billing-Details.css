@@ -1,0 +1,362 @@
+.menu {
+    display: flex;
+    padding-top: 80px;
+    gap: 12px;
+}
+
+li a {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: gray;
+}
+
+li a:focus {
+    color: black;
+
+}
+
+.section__one {
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sectionOne__left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.titel__billing {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    letter-spacing: 4%;
+    padding-top: 80px;
+}
+
+.sect__deta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect-deta__left {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.date__form {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.date__form label {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: gray;
+}
+
+#billing__inp {
+    width: 470px;
+    height: 50px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background: #F5F5F5;
+}
+
+.date__box {
+    display: flex;
+    gap: 16px;
+}
+
+.chek__inpt {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+
+}
+
+.chek__inpt:checked {
+
+    accent-color: #DB4444;
+}
+
+.text__chekbox {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.sect-deta__right {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    width: 527px;
+    /* height: 600px; */
+    gap: 32px;
+}
+
+.detaOne__box {
+    width: 425px;
+    height: 40px;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detaOne__p {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.detaOne__sum {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.detaTwo__box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 422px;
+    height: 136px;
+    gap: 16px;
+    padding-top: 32px;
+
+}
+
+.coupon__card {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.detaThere__box {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 427px;
+    height: 28px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thereBox__top {
+
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.redeo__form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.redeo__form label {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+form {
+    cursor: pointer;
+}
+
+#radeo {
+    width: 24px;
+    height: 24px;
+
+}
+
+#radeo:checked {
+    accent-color: black;
+}
+
+.detaFour__box {
+    padding-top: 32px;
+    width: 527px;
+    height: 56px;
+    gap: 16px;
+
+}
+
+.detaFour__form {
+    display: flex;
+    gap: 16px;
+}
+
+.detaFour__form input {
+    width: 300px;
+    font-size: 18px;
+    height: 56px;
+    padding: 24px;
+    border: none;
+    background: #F5F5F5;
+    outline: none;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.detaFour__form button {
+    width: 221px;
+    height: 56px;
+    background: #DB4444;
+    gap: 10px;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+    border: none;
+
+}
+
+.detaFour__form button a {
+    color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.btn__place {
+    margin-top: 64px;
+    border: none;
+    width: 200px;
+    height: 56px;
+    gap: 10px;
+    background: #DB4444;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+
+}
+
+.btn__place a {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: white;
+}
+
+
+
+.cuopon__left {
+    display: flex;
+    gap: 16px;
+}
+
+.coupon__inp {
+    width: 300px;
+    height: 56px;
+    padding-left: 24px;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+.cuopon__right {
+    padding: 32px;
+    width: 470px;
+    height: 324px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-width: 1.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.coupon__titile {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+
+}
+
+.coupon__card {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.coupon__card,
+.coupon__cardd p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.coupon__cardd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coupon__check {
+    margin-left: 70px;
+    width: 260px;
+    height: 56px;
+    border: none;
+    background: #DB4444;
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+}
+
+.coupon__check a {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #F5F5F5;
+}

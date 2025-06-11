@@ -1,0 +1,218 @@
+.account-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+}
+
+li a {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: gray;
+}
+
+li a:focus {
+    color: black;
+}
+
+nav p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
+
+nav p span {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: #DB4444;
+}
+
+.card {
+    padding-top: 80px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between
+}
+
+.card__menu {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.menu__sectoin {
+    padding: 24px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.account__menu {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.menu__sectoin a {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #000;
+}
+
+.menu__sectoin a:focus {
+    color: #DB4444;
+}
+
+.edit__account {
+    width: 870px;
+    height: 700px;
+    top: 323px;
+    left: 435px;
+    border-radius: 4px;
+    /* border: #000 1px solid; */
+    box-shadow: 0.1pc 1px 8px gray;
+
+}
+
+.ed-ac__top {
+    padding: 40px 80px;
+}
+
+.ed-ac__bot {
+    padding: 40px 80px;
+}
+
+.text__titel {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #DB4444;
+}
+
+.ed-ac__top form {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.laber__edit {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.formDiv {
+    display: flex;
+    gap: 50px;
+}
+
+#inp__edit {
+    width: 330px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background: #F5F5F5;
+    outline: none;
+    padding: 12px;
+
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.ed-ac__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ed-ac__form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#inp__editt {
+    width: 710px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background: #F5F5F5;
+    outline: none;
+    padding: 12px;
+
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.edit__btns {
+    padding-top: 24px;
+    padding-left: 400px;
+    display: flex;
+    gap: 32px;
+}
+
+.Cancel__acont {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    background: transparent;
+    border: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
+
+.Save__acont {
+    width: 224px;
+    height: 56px;
+    border-radius: 4px;
+    gap: 10px;
+    background-color: #DB4444;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+    color: #fff;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+}
