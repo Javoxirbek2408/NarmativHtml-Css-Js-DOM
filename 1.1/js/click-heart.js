@@ -199,6 +199,7 @@ if (wishlistCont) {
         `
         document.querySelectorAll('.product__discount').forEach((el) => {
             el.style.paddingTop = '10px';
+            
         });
 
         wishlistCont.innerHTML += prductHtmll;

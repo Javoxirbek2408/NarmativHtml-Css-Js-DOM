@@ -3,20 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
-repeartLetter('javascript')
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body.light {
+            background-color: white;
+            color: black;
+        }
+
+        body.dark {
+            background-color: #121212;
+            color: white;
+        }
+
+        button {
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
+    <button id="themeToggle">Toggle Theme</button>
+    <p>This is an example paragraph to show the theme.</p>
 
 
 
+    <script>
+        const toggleBtn = document.getElementById("themeToggle");
 
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            document.body.classList.toggle("light");vite v6.3.5 building for production...
+transforming...
+✓ 238 modules transformed.
+✗ Build failed in 1.12s
+error during build:
+Could not resolve "../../../../assets/icons/advanteOne" from "src/pages/Home/components/Advantages/AdvantageCard.jsx"
+file: /vercel/path0/src/pages/Home/components/Advantages/AdvantageCard.jsx
+    at getRollupError (file:///vercel/path0/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///vercel/path0/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:21408:24)
+    at file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:21368:26
+Error: Command "npm run build" exited with 1
+Exiting build container
 
+            // Agar dark bo‘lsa, tugma matnini yangilash
+            if (document.body.classList.contains("dark")) {
+                toggleBtn.textContent = "Switch to Light Mode";
+            } else {
+                toggleBtn.textContent = "Switch to Dark Mode";
+            }
+        });
 
-    
-    <script src="/js/index(masalalr).js"></script>
+        // Dastlabki holat light bo‘lishi uchun
+        document.body.classList.add("light");
+
+    </script>
+
 </body>
 
 </html>
