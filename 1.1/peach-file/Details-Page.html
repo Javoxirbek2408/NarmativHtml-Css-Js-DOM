@@ -1,377 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/1.1/narmat-1-1.css">
-    <link rel="stylesheet" href="/1.1/styles/Details-page.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/1.1/narmat-1-1.css" />
+    <link rel="stylesheet" href="/1.1/styles/Details-page.css" />
+    <style>
+      .thumbnail {
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border 0.3s, box-shadow 0.3s;
+      }
 
-<body>
+      .thumbnail.active-thumb {
+        border: 2px solid #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+      }
+      #mainImage {
+        width: 400px !important;
+        height: auto !important;
+      }
+    </style>
+  </head>
+
+  <body>
     <header>
-        <div class="banner">
-            <div class="banner-left">
-                <p class="banner__text">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-                <a href="#" class="banner__link">ShopNow</a>
-            </div>
-            <select>
-                <option value="">English</option>
-                <option value="">Russian</option>
-            </select>
+      <div class="banner">
+        <div class="banner-left">
+          <p class="banner__text">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+          <a href="#" class="banner__link">ShopNow</a>
         </div>
-        <div class="header-box container ">
-            <div class="logo">
-                <p class="logo__text">Exclusive</p>
-            </div>
-            <nav>
-                <div class="menu">
-                    <ul>
-                        <li><a href="/1.1/index.html" class="menu_link">Home</a></li>
-                        <li><a href="/1.1/peach-file/My-account.html" class="menu_link">Contact</a></li>
-                        <li><a href="#" class="menu_link">About</a></li>
-                        <li><a href="/1.1/peach-file/sing-up.html" class="menu_link">Sign Up</a></li>
-                    </ul>
-                </div>
-
-            </nav>
-            <div class="search">
-                <div class="search__input">
-                    <input type="search" placeholder="What are you looking for?">
-                    <button class="search__btn">
-                        <img src="/1.1/asate/icon/search-icon.svg" alt="">
-                    </button>
-                </div>
-                <div class="icons">
-                    <button>
-                        <a href="#"><img src="/1.1/asate/img/wishist/like-heart-4.svg" alt=""></a>
-                    </button>
-                    <button>
-                        <a href="/1.1/peach-file/buy-peach.html"><img src="/1.1/asate/img/wishist/Cart-none-like.svg"
-                                alt=""></a>
-                    </button>
-
-                    <button class="icon-person__btn">
-                        <input type="checkbox" id="person__clik">
-                        <label for="person__clik">
-                            <i class="bi bi-person"></i>
-                        </label>
-                        <div class="personClik__box">
-                            <ul>
-                                <li><a href="#"><img src="/1.1/asate/img/icon-men/user.svg" alt="">Manage My Account</a>
-                                </li>
-                                <li><a href="#"><img src="/1.1/asate/img/icon-men/icon-mallbag.svg" alt="">My Order</a>
-                                </li>
-                                <li><a href="#"><img src="/1.1/asate/img/icon-men/exit.svg" alt="">My
-                                        Cancellations</a></li>
-                                <li><a href="#"><img src="/1.1/asate/img/icon-men/star.svg" alt="">My Reviews</a></li>
-                                <li><a href="#"><img src="/1.1/asate/img/icon-men/exit.svg" alt="">Logout</a></li>
-                            </ul>
-                        </div>
-                    </button>
-                </div>
-            </div>
-
+        <select>
+          <option value="">English</option>
+          <option value="">Russian</option>
+        </select>
+      </div>
+      <div class="header-box container">
+        <div class="logo">
+          <p class="logo__text">Exclusive</p>
         </div>
+        <nav>
+          <div class="menu">
+            <ul>
+              <li><a href="/1.1/index.html" class="menu_link">Home</a></li>
+              <li>
+                <a href="/1.1/peach-file/My-account.html" class="menu_link"
+                  >Contact</a
+                >
+              </li>
+              <li><a href="#" class="menu_link">About</a></li>
+              <li>
+                <a href="/1.1/peach-file/sing-up.html" class="menu_link"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="search">
+          <div class="search__input">
+            <input type="search" placeholder="What are you looking for?" />
+            <button class="search__btn">
+              <img src="/1.1/asate/icon/search-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="icons">
+            <button>
+              <a href="#"
+                ><img src="/1.1/asate/img/wishist/like-heart-4.svg" alt=""
+              /></a>
+            </button>
+            <button>
+              <a href="/1.1/peach-file/buy-peach.html"
+                ><img src="/1.1/asate/img/wishist/Cart-none-like.svg" alt=""
+              /></a>
+            </button>
 
-        <hr class="header__linya">
+            <button class="icon-person__btn">
+              <input type="checkbox" id="person__clik" />
+              <label for="person__clik">
+                <i class="bi bi-person"></i>
+              </label>
+              <div class="personClik__box">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="/1.1/asate/img/icon-men/user.svg"
+                        alt=""
+                      />Manage My Account</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="/1.1/asate/img/icon-men/icon-mallbag.svg"
+                        alt=""
+                      />My Order</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="/1.1/asate/img/icon-men/exit.svg" alt="" />My
+                      Cancellations</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="/1.1/asate/img/icon-men/star.svg" alt="" />My
+                      Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="/1.1/asate/img/icon-men/exit.svg"
+                        alt=""
+                      />Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
 
+      <hr class="header__linya" />
     </header>
 
     <div class="breadcrumd container">
-        <p><a href="#">Account</a></p>
-        <img src="/1.1/asate/img/detalis-page/Line-by-product.svg" alt="">
-        <p><a href="#">Gaming</a></p>
-        <img src="/1.1/asate/img/detalis-page/Line-by-product.svg" alt="">
-        <p><a href="#">Havic HV G-92 Gamepad</a></p>
-
+      <p><a href="#">Account</a></p>
+      <img src="/1.1/asate/img/detalis-page/Line-by-product.svg" alt="" />
+      <p><a href="#">Gaming</a></p>
+      <img src="/1.1/asate/img/detalis-page/Line-by-product.svg" alt="" />
+      <p><a href="#">Havic HV G-92 Gamepad</a></p>
     </div>
 
-
-    <div class="product-img-section  container">
-        <div class="psection">
-            <div class="pis__left">
-                <img src="/1.1/asate/img/detalis-page/pl1.png" alt="">
-                <img src="/1.1/asate/img/detalis-page/pl2.png" alt="">
-                <img src="/1.1/asate/img/detalis-page/pl3.png" alt="">
-                <img src="/1.1/asate/img/detalis-page/pl4.png" alt="">
-            </div>
-            <div class="pis__right">
-                <img src="/1.1/asate/img/detalis-page/pl5.png" alt="">
-            </div>
-        </div>
-        <div class="section-prd">
-            <div class="box__One">
-                <h1>Havic HV G-92 Gamepad</h1>
-                <div class="top__box">
-                    <img src="/1.1/asate/img/detalis-page/FourStar.svg" alt="">
-                    <span class="one__sp">(150 Reviews)</span>
-                    <img src="/1.1/asate/img/detalis-page/linedg.svg" alt="">
-                    <span class="two__sp">In Stock</span>
-                </div>
-                <h2>$192.00</h2>
-                <p>
-                    PlayStation 5 Controller Skin High quality vinyl with air <br>
-                    channel adhesive for easy bubble free install & mess free <br>
-                    removal Pressure sensitive.
-                </p>
-            </div>
-
-            <div class="cols">
-                <p>Colours:</p>
-                <div>
-                    <img src="/1.1/asate/img/detalis-page/radeo1.svg" alt="">
-                    <img src="/1.1/asate/img/detalis-page/radeo2.svg" alt="">
-                </div>
-            </div>
-            <div class="sizeBox">
-                <p>Size:</p>
-                <div class="boxSez">
-                    <div class="sizeOne">XS</div>
-                    <div class="sizetwo">S</div>
-                    <div class="sizthere">M</div>
-                    <div class="sizefour">L</div>
-                    <div class="sizfive">XL</div>
-                </div>
-            </div>
-
-            <div class="buy__box">
-                <div class="bBox__left">
-                    <div class="bBox1">-</div>
-                    <div class="bBox2">2</div>
-                    <div class="bBox3">+</div>
-                </div>
-                <button>Buy Now</button>
-                <div class="het__div">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                        viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
-                        <path fill="currentColor"
-                            d="M11.98 19.094q-.291 0-.577-.106q-.286-.105-.503-.323L9.752 17.63q-2.67-2.425-4.71-4.717Q3 10.622 3 8.15q0-1.908 1.296-3.204T7.5 3.65q1.094 0 2.279.553T12 6.289q1.037-1.533 2.221-2.086T16.5 3.65q1.908 0 3.204 1.296T21 8.15q0 2.529-2.125 4.862t-4.652 4.622l-1.142 1.031q-.218.218-.513.323t-.587.106m-.47-11.767q-.898-1.448-1.867-2.063Q8.675 4.65 7.5 4.65q-1.5 0-2.5 1t-1 2.5q0 1.108.627 2.272q.627 1.165 1.684 2.386q1.056 1.22 2.429 2.498q1.371 1.277 2.856 2.629q.173.154.404.154t.404-.154q1.485-1.352 2.857-2.63q1.372-1.276 2.429-2.497q1.056-1.222 1.683-2.386T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.144.615q-.97.614-1.867 2.062q-.08.135-.214.202T12 7.596t-.275-.067t-.213-.202M12 11.398" />
-                    </svg>
-                </div>
-            </div>
-            <div class="box__end">
-                <div class="bEnd_top">
-                    <img src="/1.1/asate/img/detalis-page/icon-delivery.svg" alt="">
-                    <div class="prag">
-                        <p class="title">Free Delivery</p>
-                        <p class="tittl">Enter your postal code for Delivery Availability</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="bEnd_top">
-                    <img src="/1.1/asate/img/detalis-page/Icon-return.svg" alt="">
-                    <div class="prag">
-                        <p class="title">Return Delivery</p>
-                        <p>Free 30 Days Delivery Returns. <span class="tittl">Details</span></p>
-                    </div>
-                </div>
-            </div>
+    <div class="product-img-section container">
+      <div class="psection">
+        <div class="pis__left">
+          <img
+            src="/1.1/asate/img/detalis-page/pl1.png"
+            class="thumbnail active-thumb"
+            data-large="/1.1/asate/img/detalis-page/pl1.png"
+            alt=""
+          />
+          <img
+            src="/1.1/asate/img/detalis-page/pl2.png"
+            class="thumbnail"
+            data-large="/1.1/asate/img/detalis-page/pl2.png"
+            alt=""
+          />
+          <img
+            src="/1.1/asate/img/detalis-page/pl3.png"
+            class="thumbnail"
+            data-large="/1.1/asate/img/detalis-page/pl3.png"
+            alt=""
+          />
+          <img
+            src="/1.1/asate/img/detalis-page/pl4.png"
+            class="thumbnail"
+            data-large="/1.1/asate/img/detalis-page/pl4.png"
+            alt=""
+          />
         </div>
 
+        <div class="pis__right">
+          <img
+            id="mainImage"
+            src="/1.1/asate/img/detalis-page/pl5.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="section-prd">
+        <div class="box__One">
+          <h1>Havic HV G-92 Gamepad</h1>
+          <div class="top__box">
+            <img src="/1.1/asate/img/detalis-page/FourStar.svg" alt="" />
+            <span class="one__sp">(150 Reviews)</span>
+            <img src="/1.1/asate/img/detalis-page/linedg.svg" alt="" />
+            <span class="two__sp">In Stock</span>
+          </div>
+          <h2>$192.00</h2>
+          <p>
+            PlayStation 5 Controller Skin High quality vinyl with air <br />
+            channel adhesive for easy bubble free install & mess free <br />
+            removal Pressure sensitive.
+          </p>
+        </div>
+
+        <div class="cols">
+          <p>Colours:</p>
+          <div>
+            <img src="/1.1/asate/img/detalis-page/radeo1.svg" alt="" />
+            <img src="/1.1/asate/img/detalis-page/radeo2.svg" alt="" />
+          </div>
+        </div>
+        <div class="sizeBox">
+          <p>Size:</p>
+          <div class="boxSez">
+            <div class="sizeOne">XS</div>
+            <div class="sizetwo">S</div>
+            <div class="sizthere">M</div>
+            <div class="sizefour">L</div>
+            <div class="sizfive">XL</div>
+          </div>
+        </div>
+
+        <div class="buy__box">
+          <div class="bBox__left">
+            <div class="bBox1">-</div>
+            <div class="bBox2">2</div>
+            <div class="bBox3">+</div>
+          </div>
+          <button>Buy Now</button>
+          <div class="het__div">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M11.98 19.094q-.291 0-.577-.106q-.286-.105-.503-.323L9.752 17.63q-2.67-2.425-4.71-4.717Q3 10.622 3 8.15q0-1.908 1.296-3.204T7.5 3.65q1.094 0 2.279.553T12 6.289q1.037-1.533 2.221-2.086T16.5 3.65q1.908 0 3.204 1.296T21 8.15q0 2.529-2.125 4.862t-4.652 4.622l-1.142 1.031q-.218.218-.513.323t-.587.106m-.47-11.767q-.898-1.448-1.867-2.063Q8.675 4.65 7.5 4.65q-1.5 0-2.5 1t-1 2.5q0 1.108.627 2.272q.627 1.165 1.684 2.386q1.056 1.22 2.429 2.498q1.371 1.277 2.856 2.629q.173.154.404.154t.404-.154q1.485-1.352 2.857-2.63q1.372-1.276 2.429-2.497q1.056-1.222 1.683-2.386T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.144.615q-.97.614-1.867 2.062q-.08.135-.214.202T12 7.596t-.275-.067t-.213-.202M12 11.398"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="box__end">
+          <div class="bEnd_top">
+            <img src="/1.1/asate/img/detalis-page/icon-delivery.svg" alt="" />
+            <div class="prag">
+              <p class="title">Free Delivery</p>
+              <p class="tittl">
+                Enter your postal code for Delivery Availability
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="bEnd_top">
+            <img src="/1.1/asate/img/detalis-page/Icon-return.svg" alt="" />
+            <div class="prag">
+              <p class="title">Return Delivery</p>
+              <p>
+                Free 30 Days Delivery Returns.
+                <span class="tittl">Details</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-<div class="rela__div container">
-    <div></div>
-    <p>Related Item</p>
-</div>
+    <div class="rela__div container">
+      <div></div>
+      <p>Related Item</p>
+    </div>
 
     <div class="relat__box container">
-
-        <div class="product-card  product__seling">
-            <div id="relat__boxOne" class="product-card__top">
-                <div class="card-top">
-                    <span class="product__discount">-40%</span>
-                    <div class="produc__icon">
-                        <span class="product__icon"><img src="/1.1/asate/icon/heart_icon.svg" alt=""></span>
-                        <span class="product__icon"><img src="/1.1/asate/icon/ease-icon.svg" alt=""></span>
-                    </div>
-                </div>
-                <div class="card-bottom"></div>
+      <div class="product-card product__seling">
+        <div id="relat__boxOne" class="product-card__top">
+          <div class="card-top">
+            <span class="product__discount">-40%</span>
+            <div class="produc__icon">
+              <span class="product__icon"
+                ><img src="/1.1/asate/icon/heart_icon.svg" alt=""
+              /></span>
+              <span class="product__icon"
+                ><img src="/1.1/asate/icon/ease-icon.svg" alt=""
+              /></span>
             </div>
-            <div class="product-card__bottom">
-                <button class="product__btn"><a href="#">Add To Cart</a></button>
-                <p class="product__item">HAVIT HV-G92 Gamepadt</p>
-                <div class="product__price">
-                    <span class="price__one">$120</span>
-                    <span class="price__two">$160 </span>
-                </div>
-                <div class="producr__reting">
-                    <img src="/1.1/asate/icon/Five-star.svg" alt="">
-                    <span class="price__there">(88)</span>
-                </div>
-            </div>
+          </div>
+          <div class="card-bottom"></div>
         </div>
-        <div class="product-card   product__seling">
-            <div id="relat__boxTwo" class="product-card__top">
-                <div class="card-top">
-                    <span class="product__discount">-35%</span>
-                    <div class="produc__icon">
-                        <span class="product__icon"><img src="/1.1/asate/icon/heart_icon.svg" alt=""></span>
-                        <span class="product__icon"><img src="/1.1/asate/icon/ease-icon.svg" alt=""></span>
-                    </div>
-                </div>
-                <div class="card-bottom"></div>
-            </div>
-            <div class="product-card__bottom">
-                <button class="product__btn"><a href="#">Add To Cart</a></button>
-                <p class="product__item">AK-900 Wired Keyboard</p>
-                <div class="product__price">
-                    <span class="price__one">$960</span>
-                    <span class="price__two">$1160</span>
-                </div>
-                <div class="producr__reting">
-                    <img src="/1.1/asate/icon/Four-Star-two.svg" alt="">
-                    <span class="price__there">(75)</span>
-                </div>
-            </div>
+        <div class="product-card__bottom">
+          <button class="product__btn"><a href="#">Add To Cart</a></button>
+          <p class="product__item">HAVIT HV-G92 Gamepadt</p>
+          <div class="product__price">
+            <span class="price__one">$120</span>
+            <span class="price__two">$160 </span>
+          </div>
+          <div class="producr__reting">
+            <img src="/1.1/asate/icon/Five-star.svg" alt="" />
+            <span class="price__there">(88)</span>
+          </div>
         </div>
-        <div class="product-card   product__seling">
-            <div id="relat__boxThere" class="product-card__top">
-                <div class="card-top">
-                    <span class="product__discount">-30%</span>
-                    <div class="produc__icon">
-                        <span class="product__icon"><img src="/1.1/asate/icon/heart_icon.svg" alt=""></span>
-                        <span class="product__icon"><img src="/1.1/asate/icon/ease-icon.svg" alt=""></span>
-                    </div>
-                </div>
-                <div class="card-bottom"></div>
+      </div>
+      <div class="product-card product__seling">
+        <div id="relat__boxTwo" class="product-card__top">
+          <div class="card-top">
+            <span class="product__discount">-35%</span>
+            <div class="produc__icon">
+              <span class="product__icon"
+                ><img src="/1.1/asate/icon/heart_icon.svg" alt=""
+              /></span>
+              <span class="product__icon"
+                ><img src="/1.1/asate/icon/ease-icon.svg" alt=""
+              /></span>
             </div>
-            <div class="product-card__bottom">
-                <button class="product__btn"><a href="#">Add To Cart</a></button>
-                <p class="product__item">IPS LCD Gaming Monitorr</p>
-                <div class="product__price">
-                    <span class="price__one">$370</span>
-                    <span class="price__two">$4000</span>
-                </div>
-                <div class="producr__reting">
-                    <img src="/1.1/asate/icon/Five-star.svg" alt="">
-                    <span class="price__there">(99)</span>
-                </div>
-            </div>
+          </div>
+          <div class="card-bottom"></div>
         </div>
-        <div class="product-card   product__seling">
-            <div id="relat__boxFour" class="product-card__top">
-                <div class="card-top">
-                    <span></span>
-                    <div class="produc__icon">
-                        <span class="product__icon"><img src="/1.1/asate/icon/heart_icon.svg" alt=""></span>
-                        <span class="product__icon"><img src="/1.1/asate/icon/ease-icon.svg" alt=""></span>
-                    </div>
-                </div>
-                <div class="card-bottom"></div>
-            </div>
-            <div class="product-card__bottom">
-                <button class="product__btn"><a href="#">Add To Cart</a></button>
-                <p class="product__item">RGB liquid CPU Cooler</p>
-                <div class="product__price">
-                    <span class="price__one">$160</span>
-                    <span class="price__two">$170</span>
-                </div>
-                <div class="producr__reting">
-                    <img src="/1.1/asate/icon/Four-Half-Star.svg" alt="">
-                    <span class="price__there">(65)</span>
-                </div>
-            </div>
+        <div class="product-card__bottom">
+          <button class="product__btn"><a href="#">Add To Cart</a></button>
+          <p class="product__item">AK-900 Wired Keyboard</p>
+          <div class="product__price">
+            <span class="price__one">$960</span>
+            <span class="price__two">$1160</span>
+          </div>
+          <div class="producr__reting">
+            <img src="/1.1/asate/icon/Four-Star-two.svg" alt="" />
+            <span class="price__there">(75)</span>
+          </div>
         </div>
+      </div>
+      <div class="product-card product__seling">
+        <div id="relat__boxThere" class="product-card__top">
+          <div class="card-top">
+            <span class="product__discount">-30%</span>
+            <div class="produc__icon">
+              <span class="product__icon"
+                ><img src="/1.1/asate/icon/heart_icon.svg" alt=""
+              /></span>
+              <span class="product__icon"
+                ><img src="/1.1/asate/icon/ease-icon.svg" alt=""
+              /></span>
+            </div>
+          </div>
+          <div class="card-bottom"></div>
+        </div>
+        <div class="product-card__bottom">
+          <button class="product__btn"><a href="#">Add To Cart</a></button>
+          <p class="product__item">IPS LCD Gaming Monitorr</p>
+          <div class="product__price">
+            <span class="price__one">$370</span>
+            <span class="price__two">$4000</span>
+          </div>
+          <div class="producr__reting">
+            <img src="/1.1/asate/icon/Five-star.svg" alt="" />
+            <span class="price__there">(99)</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card product__seling">
+        <div id="relat__boxFour" class="product-card__top">
+          <div class="card-top">
+            <span></span>
+            <div class="produc__icon">
+              <span class="product__icon"
+                ><img src="/1.1/asate/icon/heart_icon.svg" alt=""
+              /></span>
+              <span class="product__icon"
+                ><img src="/1.1/asate/icon/ease-icon.svg" alt=""
+              /></span>
+            </div>
+          </div>
+          <div class="card-bottom"></div>
+        </div>
+        <div class="product-card__bottom">
+          <button class="product__btn"><a href="#">Add To Cart</a></button>
+          <p class="product__item">RGB liquid CPU Cooler</p>
+          <div class="product__price">
+            <span class="price__one">$160</span>
+            <span class="price__two">$170</span>
+          </div>
+          <div class="producr__reting">
+            <img src="/1.1/asate/icon/Four-Half-Star.svg" alt="" />
+            <span class="price__there">(65)</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
-
-
-
-
-
     <footer>
-        <div class="fot-top container">
-            <div class="fot__card">
-                <p class="foot__log">Exclusive </p>
-                <p class="foot__titile"> Subscribe</p>
-                <p class="foot__text">Get 10% off your first order </p>
-                <div class="for-inp">
-                    <div class="fot__input">
-                        <input type="search" placeholder="Enter your email"><button class="search__btn">
-                            <img src="/1.1/asate/img/footer-img/fot-img-one.svg" alt="">
-                        </button>
-                    </div>
-                </div>
+      <div class="fot-top container">
+        <div class="fot__card">
+          <p class="foot__log">Exclusive</p>
+          <p class="foot__titile">Subscribe</p>
+          <p class="foot__text">Get 10% off your first order</p>
+          <div class="for-inp">
+            <div class="fot__input">
+              <input type="search" placeholder="Enter your email" /><button
+                class="search__btn"
+              >
+                <img src="/1.1/asate/img/footer-img/fot-img-one.svg" alt="" />
+              </button>
             </div>
-            <div class="fot__cardtwo">
-                <p><a href="#" class="foot__content">Support</a></p>
-                <div class="foter-card">
-                    <p><a href="#" class="foot__contentext">111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.</a></p>
-                    <p><a href="#" class="foot__contentext">exclusive@gmail.com</a></p>
-                    <p><a href="#" class="foot__contentext">+88015-88888-9999</a></p>
-
-                </div>
-            </div>
-            <div class="fot__cardOne">
-                <p><a href="#" class="foot__content">Account</a></p>
-                <p><a href="#" class="foot__contentext">My Account</a></p>
-                <p><a href="#" class="foot__contentext">Login / Register</a></p>
-                <p><a href="#" class="foot__contentext">Cart</a></p>
-                <p><a href="#" class="foot__contentext">Wishlist</a></p>
-                <p><a href="#" class="foot__contentext">Shop</a></p>
-
-            </div>
-
-            <div class="fot__cardOne">
-                <p><a href="#" class="foot__content">Quick</a></p>
-                <p><a href="#" class="foot__contentext">Privacy Policy</a></p>
-                <p><a href="#" class="foot__contentext">Terms Of Use</a></p>
-                <p><a href="#" class="foot__contentext">FAQ</a></p>
-                <p><a href="#" class="foot__contentext">Contact</a></p>
-
-            </div>
-            <div class="fot__cardOne">
-                <p><a href="#" class="foot__content">Download App</a></p>
-                <p><a href="#" class="foot__conten-text">Save $3 with App New User Only</a></p>
-                <div class="fot-dow">
-                    <img src="/1.1/asate/img/footer-img/Qrcode.svg" alt="">
-                    <div>
-                        <img src="/1.1/asate/img/footer-img/ply-market.svg" alt="">
-                        <img src="/1.1/asate/img/footer-img/appstore.svg" alt="">
-                    </div>
-                </div>
-                <div class="fot-icon">
-                    <a href="#">
-                        <img src="/1.1/asate/img/footer-img/facebook.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="/1.1/asate/img/footer-img/twitter.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="/1.1/asate/img/footer-img/icon-instagram.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="/1.1/asate/img/footer-img/Icon-Linkedin.svg" alt="">
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="fot-bottom ">
-            <div class="fot-bottom__div  r">
-                <img src="/1.1/asate/img/footer-img/fot-bottom.svg" alt="">
-                <a href="#" class="footer__limk">Copyright Rimel 2022. All right reserved</a>
-            </div>
+        <div class="fot__cardtwo">
+          <p><a href="#" class="foot__content">Support</a></p>
+          <div class="foter-card">
+            <p>
+              <a href="#" class="foot__contentext"
+                >111 Bijoy sarani, Dhaka, <br />
+                DH 1515, Bangladesh.</a
+              >
+            </p>
+            <p><a href="#" class="foot__contentext">exclusive@gmail.com</a></p>
+            <p><a href="#" class="foot__contentext">+88015-88888-9999</a></p>
+          </div>
         </div>
+        <div class="fot__cardOne">
+          <p><a href="#" class="foot__content">Account</a></p>
+          <p><a href="#" class="foot__contentext">My Account</a></p>
+          <p><a href="#" class="foot__contentext">Login / Register</a></p>
+          <p><a href="#" class="foot__contentext">Cart</a></p>
+          <p><a href="#" class="foot__contentext">Wishlist</a></p>
+          <p><a href="#" class="foot__contentext">Shop</a></p>
+        </div>
+
+        <div class="fot__cardOne">
+          <p><a href="#" class="foot__content">Quick</a></p>
+          <p><a href="#" class="foot__contentext">Privacy Policy</a></p>
+          <p><a href="#" class="foot__contentext">Terms Of Use</a></p>
+          <p><a href="#" class="foot__contentext">FAQ</a></p>
+          <p><a href="#" class="foot__contentext">Contact</a></p>
+        </div>
+        <div class="fot__cardOne">
+          <p><a href="#" class="foot__content">Download App</a></p>
+          <p>
+            <a href="#" class="foot__conten-text"
+              >Save $3 with App New User Only</a
+            >
+          </p>
+          <div class="fot-dow">
+            <img src="/1.1/asate/img/footer-img/Qrcode.svg" alt="" />
+            <div>
+              <img src="/1.1/asate/img/footer-img/ply-market.svg" alt="" />
+              <img src="/1.1/asate/img/footer-img/appstore.svg" alt="" />
+            </div>
+          </div>
+          <div class="fot-icon">
+            <a href="#">
+              <img src="/1.1/asate/img/footer-img/facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="/1.1/asate/img/footer-img/twitter.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="/1.1/asate/img/footer-img/icon-instagram.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="/1.1/asate/img/footer-img/Icon-Linkedin.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="fot-bottom">
+        <div class="fot-bottom__div r">
+          <img src="/1.1/asate/img/footer-img/fot-bottom.svg" alt="" />
+          <a href="#" class="footer__limk"
+            >Copyright Rimel 2022. All right reserved</a
+          >
+        </div>
+      </div>
     </footer>
 
-</body>
+    <script>
+      const thumbnails = document.querySelectorAll(".thumbnail");
+      const mainImage = document.getElementById("mainImage");
 
+      thumbnails.forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+          // Asosiy rasmni yangilash
+          const newSrc = thumb.getAttribute("data-large");
+          mainImage.setAttribute("src", newSrc);
+
+          // Faol (active) class boshqaruvi
+          thumbnails.forEach((t) => t.classList.remove("active-thumb"));
+          thumb.classList.add("active-thumb");
+        });
+      });
+    </script>
+    <script>
+      // ===== RANG TANLASH =====
+      const colorButtons = document.querySelectorAll(".cols img");
+      let selectedColor = null;
+
+      colorButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Barcha rang tugmalaridan 'active' klassini olib tashlash
+          colorButtons.forEach((c) => c.classList.remove("selected-color"));
+          // Tanlangan rangga 'selected-color' klassini qo'shish
+          btn.classList.add("selected-color");
+          // Rang nomini konsolga chiqarish (src yoki alt orqali)
+          selectedColor = btn.getAttribute("alt") || btn.getAttribute("src");
+          console.log("Tanlangan rang:", selectedColor);
+        });
+      });
+
+      // Stil orqali tanlangan rangni ko‘rsatish (CSS qo‘shiladi)
+      const style = document.createElement("style");
+      style.textContent = `
+    .selected-color {
+      border: 2px solid #007bff;
+      border-radius: 50%;
+      padding: 2px;
+    }
+  `;
+      document.head.appendChild(style);
+
+      // ===== MIQDORNI O‘ZGARTIRISH =====
+      const minusBtn = document.querySelector(".bBox1");
+      const plusBtn = document.querySelector(".bBox3");
+      const qtyDisplay = document.querySelector(".bBox2");
+      let quantity = parseInt(qtyDisplay.textContent);
+
+      plusBtn.addEventListener("click", () => {
+        quantity += 1;
+        qtyDisplay.textContent = quantity;
+      });
+
+      minusBtn.addEventListener("click", () => {
+        if (quantity > 1) {
+          quantity -= 1;
+          qtyDisplay.textContent = quantity;
+        }
+      });
+
+      // ===== XARID JARAYONI =====
+      const buyNowBtn = document.querySelector(".buy__box button");
+      const productTitle = document.querySelector(".box__One h1").textContent;
+      const productPrice = document.querySelector(".box__One h2").textContent;
+
+      buyNowBtn.addEventListener("click", () => {
+        if (!selectedColor) {
+          alert("Iltimos, avval rangni tanlang.");
+          return;
+        }
+
+        const purchaseData = {
+          mahsulot: productTitle,
+          narx: productPrice,
+          rang: selectedColor,
+          miqdor: quantity,
+        };
+
+        console.log("Xarid ma'lumotlari:", purchaseData);
+        alert("Xarid amalga oshirildi! Ma'lumotlar konsolda.");
+      });
+    </script>
+  </body>
 </html>
